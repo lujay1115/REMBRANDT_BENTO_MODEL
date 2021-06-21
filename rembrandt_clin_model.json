@@ -1,0 +1,207 @@
+{
+  "style": {
+    "node-color": "#ffffff",
+    "border-width": 4,
+    "border-color": "#000000",
+    "radius": 50,
+    "node-padding": 5,
+    "node-margin": 2,
+    "outside-position": "auto",
+    "caption-position": "inside",
+    "caption-max-width": 200,
+    "caption-color": "#000000",
+    "caption-font-size": 50,
+    "caption-font-weight": "normal",
+    "label-position": "inside",
+    "label-color": "#000000",
+    "label-background-color": "#ffffff",
+    "label-border-color": "#000000",
+    "label-border-width": 4,
+    "label-font-size": 40,
+    "label-padding": 5,
+    "label-margin": 4,
+    "directionality": "directed",
+    "detail-position": "inline",
+    "detail-orientation": "parallel",
+    "arrow-width": 5,
+    "arrow-color": "#000000",
+    "margin-start": 5,
+    "margin-end": 5,
+    "margin-peer": 20,
+    "attachment-start": "normal",
+    "attachment-end": "normal",
+    "type-color": "#000000",
+    "type-background-color": "#ffffff",
+    "type-border-color": "#000000",
+    "type-border-width": 0,
+    "type-font-size": 40,
+    "type-padding": 5,
+    "property-position": "outside",
+    "property-color": "#000000",
+    "property-font-size": 40,
+    "property-font-weight": "normal"
+  },
+  "nodes": [
+    {
+      "id": "n0",
+      "position": {
+        "x": -23196.648102538365,
+        "y": -7642.784898592728
+      },
+      "caption": "",
+      "labels": [
+        "institution"
+      ],
+      "properties": {
+        "INSTITUTION_NAME": ""
+      },
+      "style": {
+        "radius": 100
+      }
+    },
+    {
+      "id": "n1",
+      "position": {
+        "x": -23872.11212584126,
+        "y": -7368.28890267592
+      },
+      "caption": "",
+      "labels": [
+        "study_subject"
+      ],
+      "properties": {
+        "SUBJECT_ID": "",
+        "STEROID_DOSE_STATUS": "",
+        "ANTI_CONVULSANT_STATUS": "",
+        "KARNOFSKY": "",
+        "NEURO_EXAM_SCORE": "",
+        "DISEASE_EVAL_MRI": "",
+        "GENE_EXP": "",
+        "COPY_NUMBER": ""
+      },
+      "style": {
+        "radius": 100
+      }
+    },
+    {
+      "id": "n2",
+      "position": {
+        "x": -23018.2120858712,
+        "y": -7329.910250551614
+      },
+      "caption": "",
+      "labels": [
+        "demographic_data"
+      ],
+      "properties": {
+        "RACE": "",
+        "AGE_RANGE": "",
+        "GENDER": ""
+      },
+      "style": {
+        "radius": 100
+      }
+    },
+    {
+      "id": "n3",
+      "position": {
+        "x": -23573.955089573756,
+        "y": -6790.217609975599
+      },
+      "caption": "",
+      "labels": [
+        "outcome"
+      ],
+      "properties": {
+        "EVENT_OS": "",
+        "OVERALL_SURVIVAL_MONTHS": ""
+      },
+      "style": {
+        "radius": 100
+      }
+    },
+    {
+      "id": "n5",
+      "position": {
+        "x": -23216.449407290842,
+        "y": -7049.374967492822
+      },
+      "caption": "",
+      "style": {
+        "radius": 100
+      },
+      "labels": [
+        "diagnosis"
+      ],
+      "properties": {
+        "DISEASE_TYPE": "",
+        "WHO_GRADE": ""
+      }
+    },
+    {
+      "id": "n6",
+      "position": {
+        "x": -24125.376395375406,
+        "y": -6869.343181116974
+      },
+      "caption": "",
+      "style": {
+        "radius": 100
+      },
+      "labels": [
+        "therapeutic_procedure"
+      ],
+      "properties": {
+        "THERAPY_RADIATION_SITE": "",
+        "THERAPY_RADIATION_TYPE": "",
+        "THERAPY_CHEMO_AGENT_NAME": "",
+        "THERAPY_SURGERY_TITLE": "",
+        "THERAPY_SURGERY_HIST_DIAG": "",
+        "THERAPY_SURGERY_OUTCOME": "",
+        "THERAPY_TIMEPOINT": ""
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "n0",
+      "fromId": "n0",
+      "toId": "n1",
+      "type": "of_study_subject",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n1",
+      "fromId": "n2",
+      "toId": "n1",
+      "type": "of_study_subject",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n2",
+      "fromId": "n3",
+      "toId": "n1",
+      "type": "of_study_subject",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n5",
+      "type": "of_study_subject",
+      "style": {},
+      "properties": {},
+      "fromId": "n5",
+      "toId": "n1"
+    },
+    {
+      "id": "n6",
+      "type": "of_study_subject",
+      "style": {},
+      "properties": {},
+      "fromId": "n6",
+      "toId": "n1"
+    }
+  ]
+}
