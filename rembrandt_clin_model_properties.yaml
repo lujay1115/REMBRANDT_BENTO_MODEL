@@ -4,13 +4,13 @@ PropDefinitions:
     Desc: The name of the institution in charge of conducting the clinical or research program.
     Src: None
     Type: string
-    Req: true
+    Req: false
     Private: false
   SUBJECT_ID:
     Desc: A unique id assigned by the data commons to the study subject.
     Src: None
     Type: string
-    Req: true
+    Req: false
     Private: false
   STEROID_DOSE_STATUS:
     Desc: Steroid dose status.
@@ -96,44 +96,92 @@ PropDefinitions:
     Type: number
     Req: false
     Private: false
-  THERAPY_RADIATION_SITE:
-    Desc: Therapy radiation site.
+  ON_THERAPY_RADIATION_SITE:
+    Desc: On therapy Radiation site.
     Src: None
     Type: string
     Req: false
     Private: false
-  THERAPY_RADIATION_TYPE:
-    Desc: Therapy radiation type.
+  ON_THERAPY_RADIATION_TYPE:
+    Desc: On therapy radiation type.
     Src: None
     Type: string
     Req: false
     Private: false
-  THERAPY_CHEMO_AGENT_NAME:
-    Desc: Therapy chemo agent name.
+  ON_THERAPY_CHEMO_AGENT_NAME:
+    Desc: On therapy chemo agent name.
     Src: None
     Type: string
     Req: false
     Private: false
-  THERAPY_SURGERY_TITLE:
-    Desc: Therapy surgery title.
+  ON_THERAPY_SURGERY_TITLE:
+    Desc: On therapy surgery title.
     Src: None
     Type: string
     Req: false
     Private: false
-  THERAPY_SURGERY_HIST_DIAG:
-    Desc: Therapy surgery histological diagnosis.
+  ON_THERAPY_SURGERY_HIST_DIAG:
+    Desc: On therapy surgery histological diagnosis.
     Src: None
     Type: string
     Req: false
     Private: false
-  THERAPY_SURGERY_OUTCOME:
-    Desc: Therapy surgery outcome.
+  ON_THERAPY_SURGERY_OUTCOME:
+    Desc: On therapy surgery outcome.
     Src: None
     Type: string
     Req: false
     Private: false
-  THERAPY_TIMEPOINT:
-    Desc: Therapy procedure timepoint.
+  PRIOR_THERAPY_RADIATION_TYPE:
+    Desc: Prior therapy radiation type.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  PRIOR_THERAPY_CHEMO_AGENT_NAME:
+    Desc: Prior therapy chemo agent name.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  PRIOR_THERAPY_PROCEDURE:
+    Desc: Prior therapy procedure.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  PRIOR_THERAPY_SURGERY_TUMOR_HISTOLOGY:
+    Desc: Prior therapy surgery tumor histology.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  PRIOR_THERAPY_SURGERY_OUTCOME:
+    Desc: Prior therapy surgery outcome.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  PRIOR_THERAPY_SURGERY_OUTCOME_1:
+    Desc: Prior therapy surgery outcome from first follow up.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  PRIOR_THERAPY_SURGERY_OUTCOME_2:
+    Desc: Prior therapy surgery outcome from second follow up.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  PT_NAME1:
+    Desc: Prior therapy surgery done at first follow up.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  PT_NAME2:
+    Desc: Prior therapy surgery done at second follow up.
     Src: None
     Type: string
     Req: false

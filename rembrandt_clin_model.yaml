@@ -5,18 +5,35 @@
   study_subject:
     Props:
       - SUBJECT_ID
-      - STEROID_DOSE_STATUS
-      - ANTI_CONVULSANT_STATUS
       - KARNOFSKY
       - NEURO_EXAM_SCORE
-      - DISEASE_EVAL_MRI	
-      - GENE_EXP
-      - COPY_NUMBER      
+      - DISEASE_EVAL_MRI
+      - STEROID_DOSE_STATUS
+      - ANTI_CONVULSANT_STATUS      
   demographic_data:
     Props:
       - RACE
       - AGE_RANGE
       - GENDER
+  prior_therapeutic_procedure:
+    Props:
+      - PRIOR_THERAPY_RADIATION_TYPE
+      - PRIOR_THERAPY_CHEMO_AGENT_NAME
+      - PRIOR_THERAPY_PROCEDURE
+      - PRIOR_THERAPY_SURGERY_TUMOR_HISTOLOGY
+      - PRIOR_THERAPY_SURGERY_OUTCOME
+      - PRIOR_THERAPY_SURGERY_OUTCOME_2
+      - PT_NAME2
+      - PRIOR_THERAPY_SURGERY_OUTCOME_1
+      - PT_NAME1
+  on_therapeutic_procedure:
+    Props:
+      - ON_THERAPY_RADIATION_SITE
+      - ON_THERAPY_RADIATION_TYPE
+      - ON_THERAPY_CHEMO_AGENT_NAME
+      - ON_THERAPY_SURGERY_TITLE
+      - ON_THERAPY_SURGERY_HIST_DIAG
+      - ON_THERAPY_SURGERY_OUTCOME
   diagnosis:
     Props:
       - DISEASE_TYPE
@@ -25,25 +42,20 @@
     Props:
       - EVENT_OS
       - OVERALL_SURVIVAL_MONTHS
-  therapeutic_procedure:
-    Props:
-      - THERAPY_RADIATION_SITE
-      - THERAPY_RADIATION_TYPE
-      - THERAPY_CHEMO_AGENT_NAME
-      - THERAPY_SURGERY_TITLE
-      - THERAPY_SURGERY_HIST_DIAG
-      - THERAPY_SURGERY_OUTCOME
-      - THERAPY_TIMEPOINT
 Relationships:
   of_study_subject:
     Mul: many_to_one
     Ends:
       - Src: demographic_data
         Dst: study_subject
+      - Src: outcome
+        Dst: study_subject
       - Src: diagnosis
         Dst: study_subject
       - Src: institution
         Dst: study_subject
-      - Src: therapeutic_procedure
+      - Src: on_therapeutic_procedure
+        Dst: study_subject
+      - Src: prior_therapeutic_procedure
         Dst: study_subject
     Props: null
