@@ -1,0 +1,86 @@
+Nodes:
+  institution:
+    Props:
+      - institution_id 
+      - INSTITUTION_NAME
+  study_subject:
+    Props:
+      - study_subject_id
+      - SUBJECT_ID     
+  demographic_data:
+    Props:
+      - demographic_data_id
+      - RACE
+      - AGE_RANGE
+      - GENDER
+  prior_therapeutic_procedure:
+    Props:
+      - prior_therapeutic_procedure_id
+      - PRIOR_THERAPY_RADIATION_TYPE
+      - PRIOR_THERAPY_CHEMO_AGENT_NAME
+      - PRIOR_THERAPY_PROCEDURE
+      - PRIOR_THERAPY_SURGERY_TUMOR_HISTOLOGY
+      - PRIOR_THERAPY_SURGERY_OUTCOME
+      - PRIOR_THERAPY_SURGERY_OUTCOME_2
+      - PT_NAME2
+      - PRIOR_THERAPY_SURGERY_OUTCOME_1
+      - PT_NAME1
+  on_therapeutic_procedure:
+    Props:
+      - on_therapeutic_procedure_id
+      - ON_THERAPY_RADIATION_SITE
+      - ON_THERAPY_RADIATION_TYPE
+      - ON_THERAPY_CHEMO_AGENT_NAME
+      - ON_THERAPY_SURGERY_TITLE
+      - ON_THERAPY_SURGERY_HIST_DIAG
+      - ON_THERAPY_SURGERY_OUTCOME
+  diagnosis:
+    Props:
+      - diagnosis_id
+      - DISEASE_TYPE
+      - WHO_GRADE
+  outcome:
+    Props:
+      - outcome_id
+      - EVENT_OS
+      - OVERALL_SURVIVAL_MONTHS
+  clinical_evaluation:
+    Props:
+      - clinical_evaluation_id
+      - KARNOFSKY
+      - NEURO_EXAM_SCORE
+      - DISEASE_EVAL_MRI
+      - STEROID_DOSE_STATUS
+      - ANTI_CONVULSANT_STATUS 
+  file:
+    Props:
+      - file_id
+      - file_description
+      - file_format
+      - file_location
+      - file_name
+      - file_size
+      - file_status
+      - file_type
+      - md5sum
+Relationships:
+  of_study_subject:
+    Mul: many_to_many
+    Ends:
+      - Src: demographic_data
+        Dst: study_subject
+      - Src: diagnosis
+        Dst: study_subject
+      - Src: outcome
+        Dst: study_subject
+      - Src: institution
+        Dst: study_subject
+      - Src: on_therapeutic_procedure
+        Dst: study_subject
+      - Src: prior_therapeutic_procedure
+        Dst: study_subject
+      - Src: clinical_evaluation
+        Dst: study_subject
+      - Src: file
+        Dst: study_subject        
+    Props: null

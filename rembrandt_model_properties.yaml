@@ -1,0 +1,289 @@
+PropDefinitions:
+  institution_id:
+    Desc: A unique id assigned by the data commons to the institution.
+    Src: None
+    Type: string
+    Req: true
+    Private: false
+  INSTITUTION_NAME:
+    Desc: The name of the institution in charge of conducting the clinical or research program.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  study_subject_id:
+    Desc: A unique id assigned by the data commons to the study subject.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  SUBJECT_ID:
+    Desc: A unique id assigned by REMBRANDT to the study subject.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  clinical_evaluation_id:
+    Desc: A unique id assigned by the data commons to clinical_evaluation.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  STEROID_DOSE_STATUS:
+    Desc: Steroid dose status.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  ANTI_CONVULSANT_STATUS:
+    Desc: Anti convulsant status.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  KARNOFSKY:
+    Desc: Score from the Karnofsky Performance status scale, representing the functional capabilities of a person.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  NEURO_EXAM_SCORE:
+    Desc: Neurologic exam score of participant.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  DISEASE_EVAL_MRI:
+    Desc: Disease evaluation as measured by scan (MRI/CT).
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  GENE_EXP:
+    Desc: Sample has gene expression data.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  COPY_NUMBER:
+    Desc: Sample has copy number data.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  demographic_data_id:
+    Desc: A unique id assigned by the data commons to the demographic data.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  RACE:
+    Desc: Race (not ethnicity)
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  AGE_RANGE:
+    Desc: Age range.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  GENDER:
+    Desc: The classification of the sex or gender role of the patient.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  diagnosis_id:
+    Desc: A unique id assigned by the data commons to the disease type.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  DISEASE_TYPE:
+    Desc: Disease type.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  WHO_GRADE:
+    Desc: WHO grade of tumor.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  outcome_id:
+    Desc: A unique id assigned by the data commons to the outcome.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  EVENT_OS:
+    Desc: Indicates death OR no record of death.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  OVERALL_SURVIVAL_MONTHS:
+    Desc: Tracks the time from diagnosis or surgery to event(death) or last follow up in months.
+    Src: None
+    Type: number
+    Req: false
+    Private: false
+  on_therapeutic_procedure_id:
+    Desc: A unique id assigned by the data commons to the on therapy procedure data.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  ON_THERAPY_RADIATION_SITE:
+    Desc: On therapy Radiation site.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  ON_THERAPY_RADIATION_TYPE:
+    Desc: On therapy radiation type.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  ON_THERAPY_CHEMO_AGENT_NAME:
+    Desc: On therapy chemo agent name.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  ON_THERAPY_SURGERY_TITLE:
+    Desc: On therapy surgery title.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  ON_THERAPY_SURGERY_HIST_DIAG:
+    Desc: On therapy surgery histological diagnosis.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  ON_THERAPY_SURGERY_OUTCOME:
+    Desc: On therapy surgery outcome.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  prior_therapeutic_procedure_id:
+    Desc: A unique id assigned by the data commons to the prior therapy procedure data.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  PRIOR_THERAPY_RADIATION_TYPE:
+    Desc: Prior therapy radiation type.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  PRIOR_THERAPY_CHEMO_AGENT_NAME:
+    Desc: Prior therapy chemo agent name.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  PRIOR_THERAPY_PROCEDURE:
+    Desc: Prior therapy procedure.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  PRIOR_THERAPY_SURGERY_TUMOR_HISTOLOGY:
+    Desc: Prior therapy surgery tumor histology.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  PRIOR_THERAPY_SURGERY_OUTCOME:
+    Desc: Prior therapy surgery outcome.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  PRIOR_THERAPY_SURGERY_OUTCOME_1:
+    Desc: Prior therapy surgery outcome from first follow up.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  PRIOR_THERAPY_SURGERY_OUTCOME_2:
+    Desc: Prior therapy surgery outcome from second follow up.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  PT_NAME1:
+    Desc: Prior therapy surgery done at first follow up.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  PT_NAME2:
+    Desc: Prior therapy surgery done at second follow up.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  file_id:
+    Desc: A unique id assigned by the data commons to a file.
+    Src: None
+    Type: string
+    Req: true
+    Private: false
+  file_description:
+    Desc: Optional description of the file and its content.
+    Src: None
+    Type: string
+    Req: false
+    Private: false
+  file_format:
+    Desc: The specific format of the file as derived by the loader.
+    Src: None
+    Type: string
+    Req: true
+    Private: false
+  file_location:
+    Desc: Location or Path to file.
+    Src: None
+    Type: string
+    Req: true
+    Private: false
+  file_name:
+    Desc: File name as assigned by data submitter.
+    Src: None
+    Type: string
+    Req: true
+    Private: false
+  file_size:
+    Desc: Size of the file as derived by the loader.
+    Src: None
+    Type: number
+    Req: true
+    Private: false
+  file_status:
+    Desc: Enumerated representation of the status of files.
+    Src: None
+    Type: String
+    Req: true
+    Private: false
+  file_type:
+    Desc: Indicator as to the nature of the file in terms of its content.
+    Src: None
+    Type: string
+    Req: true
+    Private: false 
+  md5sum:
+    Desc: Md5 checksum.
+    Src: None
+    Type: string
+    Req: true
+    Private: false
